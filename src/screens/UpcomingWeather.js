@@ -23,7 +23,7 @@ const UpcomingWeather = ({ weatherData }) => {
     <SafeAreaView style={container}>
       <ImageBackground
         style={image}
-        source={{ uri: 'https://reactjs.org/logo-og.png' }}
+        source={{ uri: 'https://images.unsplash.com/photo-1554050857-c84a8abdb5e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2t8ZW58MHx8MHx8fDA%3D&w=1000&q=80' }}
       >
         <FlatList
           data={weatherData}
@@ -38,7 +38,6 @@ const UpcomingWeather = ({ weatherData }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: StatusBar.currentHeight || 0,
     backgroundColor: 'royalblue'
   },
   image: {

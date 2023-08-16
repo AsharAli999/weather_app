@@ -22,13 +22,13 @@ const ListItem = (props) => {
 const styles = StyleSheet.create({
   item: {
     padding: 20,
-    marginVertical: 8,
+    marginVertical: 0,
     marginHorizontal: 16,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
     borderWidth: 5,
-    backgroundColor: 'indianred'
+    backgroundColor: 'tomato'
   },
   temp: {
     color: 'white',

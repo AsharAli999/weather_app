@@ -64,15 +64,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   temperature: {
-    color: 'black',
+    color: 'white',
     fontSize: 48
   },
   feels: {
     fontSize: 30,
-    color: 'black'
+    color: 'white'
   },
   hiLow: {
-    color: 'black',
+    color: 'white',
     fontSize: 20
   },
   hiLowWrapper: {
@@ -82,13 +82,15 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
     paddingLeft: 25,
-    marginBottom: 40
+    marginBottom: 100
   },
   description: {
-    fontSize: 43
+    fontSize: 43,
+    color: 'white'
   },
   message: {
-    fontSize: 25
+    fontSize: 25,
+    color: 'white'
   }
 })
 export default CurrentWeather

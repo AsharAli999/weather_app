@@ -16,26 +16,26 @@ const Tabs = ({ weather }) => {
         tabBarActiveTintColor: 'tomato',
         tabBarInactiveTintColor: 'gray',
         tabBarStyle: {
-          backgroundColor: 'lightblue'
+          backgroundColor: '#374151'
         },
         headerStyle: {
-          backgroundColor: 'lightblue'
+          backgroundColor: '#374151'
         },
         headerTitleStyle: {
           fontWeight: 'bold',
-          fontSize: 25,
+          fontSize: 24,
           color: 'tomato'
         }
       }}
     >
       <Tab.Screen
-        name={'Current'}
+        name={'CURRENT'}
         options={{
           tabBarIcon: ({ focused }) => (
             <Feather
               name={'droplet'}
               size={25}
-              color={focused ? 'tomato' : 'black'}
+              color={focused ? 'tomato' : 'white'}
             />
           )
         }}
@@ -43,13 +43,13 @@ const Tabs = ({ weather }) => {
         {() => <CurrentWeather weatherData={weather.list[0]} />}
       </Tab.Screen>
       <Tab.Screen
-        name={'Upcoming'}
+        name={'UPCOMING'}
         options={{
           tabBarIcon: ({ focused }) => (
             <Feather
               name={'clock'}
               size={25}
-              color={focused ? 'tomato' : 'black'}
+              color={focused ? 'tomato' : 'white'}
             />
           )
         }}
@@ -57,13 +57,13 @@ const Tabs = ({ weather }) => {
         {() => <UpcomingWeather weatherData={weather.list} />}
       </Tab.Screen>
       <Tab.Screen
-        name={'City'}
+        name={'CITY'}
         options={{
           tabBarIcon: ({ focused }) => (
             <Feather
               name={'home'}
               size={25}
-              color={focused ? 'tomato' : 'black'}
+              color={focused ? 'tomato' : 'white'}
             />
           )
         }}
